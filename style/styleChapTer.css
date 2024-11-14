@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+}
+
+header {
+  color: #fff;
+  padding: 10px 0;
+}
+
+.top_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  display: flex;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #e995cd;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #e66300;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #e66300;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #ff6a00;
+}
+
+main {
+  padding: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ten-truyen {
+  text-decoration: none;
+  color: #000000;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.text-content {
+  margin-top: 20px;
+}
+
+.chuyen_trang {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.trang_truoc {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+}
+.trang_sau {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer_contact p {
+  margin: 5px 0;
+}
+
+.footer_contact a {
+  color: #34747c;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.menu-open {
+    display: flex;
+  }
+
+  .list_truyen {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: max-content;
+  }
+
+  .truyen {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 9.5%;
+    box-sizing: border-box;
+    margin-right: 5px;
+  }
+
+  .truyen_chay {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .truyen_chay .prev,
+  .truyen_chay .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .truyen_chay .prev {
+    left: 0;
+  }
+
+  .truyen_chay .next {
+    right: 0;
+  }
+
+  .list_truyen_moi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .truyen_moi {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 32%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer_contact p {
+    margin: 5px 0;
+  }
+
+  .footer_contact a {
+    color: #34747c;
+    text-decoration: none;
+  }
+
+  .chuyen_trang {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .trang_truoc {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff6a00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+  }
+  .trang_sau {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff6a00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+  }
+}
